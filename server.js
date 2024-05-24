@@ -10,7 +10,7 @@ createServer({
     name: "Wilderness Wanderer",
     price: 75,
     description: "The Wilderness Wanderer is perfect for those who crave adventure. With off-road capabilities, a rooftop tent, and ample storage, it’s ready to take you anywhere.",
-    imageUrl: "https://unsplash.com/photos/lWzW9EJ3xJc",
+    imageUrl: "src/assets/vans/van-7.jpg",
     type: "adventure",
     hostId: "124"
   })
@@ -19,7 +19,7 @@ server.create("van",   {
   "name": "Urban Escape",
   price: 55,
   description: "The Urban Escape is a compact and efficient van ideal for city trips. It includes a comfortable sleeping area, kitchenette, and plenty of space for your gear.",
-  imageUrl: "https://unsplash.com/photos/5M2B69n6vsE",
+  imageUrl: "src/assets/vans/van-4.jpg",
   type: "city",
   hostId: "125"
 })
@@ -29,7 +29,7 @@ server.create("van",   {
   name: "Mountain Climber",
   price: 80,
   description: "The Mountain Climber is equipped with everything you need for high-altitude adventures. Featuring a reinforced chassis, climbing gear storage, and a powerful engine.",
-  imageUrl: "https://unsplash.com/photos/eBTe3tG1Qt4",
+  imageUrl: "src/assets/vans/van-6.jpg",
   type: "adventure",
   hostId: "126"
 })
@@ -38,7 +38,7 @@ server.create("van",   {
   name: "Beach Bum",
   price: 65,
   description: "The Beach Bum is designed for those who love the sea. With a surfboard rack, outdoor shower, and cozy sleeping quarters, it’s the perfect beach getaway vehicle.",
-  imageUrl: "https://unsplash.com/photos/68BbdxDw3Fw",
+  imageUrl: "src/assets/vans/van-1.jpg",
   type: "leisure",
   hostId: "127"
 })
@@ -47,7 +47,7 @@ server.create("van",   {
   name: "Family Traveler",
   price: 70,
   description: "The Family Traveler is spacious and comfortable, ideal for family trips. It includes bunk beds, a full kitchenette, and plenty of room for the kids.",
-  imageUrl: "https://unsplash.com/photos/gREquCUXQLI",
+  imageUrl: "src/assets/vans/van-3.jpg",
   type: "family",
   hostId: "128"
 })
