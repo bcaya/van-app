@@ -27,6 +27,7 @@ header {
   height: 5rem;
   display:flex;
 align-items: center;
+padding-bottom: 1rem;
 }
 
 header a{
@@ -38,33 +39,12 @@ header .site-logo{
   margin-right: auto;
   font-weight: 900;
   font-size: 2rem;
-  text-decoration: underline;
+  text-decoration: underline overline;
 }
 nav {
   display: flex;
 }
 
-/*** Home page ***/ 
-.home-container{
-  padding: 45px 23px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-  url("./assets/home-van.jpg") no-repeat center center;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-min-height: 350px;
-color: white;
-}
-.home-container h1 {
-  font-weight: 700;
-  font-size: 2.25rem;
-  line-height: 42px;
-}
-
-.home-container p {
-  line-height: 24px;
-}
 a {
   color: #1F140A;
 }
@@ -113,3 +93,62 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/*** Home page ***/ 
+.home-container{
+  padding: 45px 23px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+  url("./assets/home-van.jpg") no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+min-height: 350px;
+color: white;
+}
+.home-container h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 42px;
+}
+
+.home-container p {
+  line-height: 24px;
+}
+
+/** Vans Page **/
+.van-list-container{
+  padding-inline: 2rem;
+  width:100vw;
+}
+
+.van-list{
+  display: grid;
+  grid-gap: 1rem;
+
+}
+
+.van-card img {
+  border-radius: 5px;
+  object-fit:contain;
+  height:6.5rem;
+}
+.van-type {
+  height: 34px;
+  padding: 6px 26px;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFEAD0;
+  color: #4D4D4D;
+  transition: 200ms all cubic-bezier(0.8, 0, 0.2, 1);
+}
+
+@supports (width: min(250px, 100%)) {
+  .van-list {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+}
+  
