@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,10 +17,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
+.site-wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+}
+
+header {
+  height: 120px;
+  display:flex;
+
+}
+
+header a{
   text-decoration: inherit;
+  padding: .4rem 1.3rem;
+}
+header .site-logo{
+  color: black;
+  margin-right: auto;
+
+  font-weight: 900;
+  font-size: 2rem;
+}
+nav {
+  display: flex;
+}
+
+/*** Home page ***/ 
+.home-container{
+  padding: 45px 23px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+  url("./assets/home-van.jpg") no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+min-height: 350px;
+color: white;
+}
+.home-container h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 42px;
 }
 a:hover {
   color: #535bf2;
@@ -25,15 +68,11 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 
 button {
   border-radius: 8px;
@@ -56,8 +95,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #1F140A;
+    background-color: #FEFAE0;
   }
   a:hover {
     color: #747bff;

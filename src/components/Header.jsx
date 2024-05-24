@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom"
 export default function Header(){
   return(
     <header>
-      <Link className="site-logo" to="/">WanderWheels</Link>
+      <Link className="site-logo" to="/">VanVentures</Link>
       <nav>
         <NavLink
           to="/host"
