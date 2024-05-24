@@ -1,16 +1,16 @@
-### WanderWheels Website Copy
+### VanVentures Website Copy
 
 #### Welcome Section
 ---
-**Welcome to WanderWheels!**
+**Welcome to VanVentures!**
 
-Discover the freedom of the open road with WanderWheels, your premier van rental service. Whether you’re planning a weekend getaway or a cross-country adventure, our fleet of fully equipped vans is ready to take you wherever your heart desires. Embrace the spirit of adventure and explore the world on your terms.
+Discover the freedom of the open road with VanVentures, your premier van rental service. Whether you’re planning a weekend getaway or a cross-country adventure, our fleet of fully equipped vans is ready to take you wherever your heart desires. Embrace the spirit of adventure and explore the world on your terms.
 
 #### About Us Section
 ---
-**About WanderWheels**
+**About VanVentures**
 
-At WanderWheels, we believe in the power of travel to inspire and rejuvenate. Our mission is to provide you with the perfect vehicle for your journey, combining comfort, reliability, and adventure. Each of our vans is designed with you in mind, featuring all the amenities you need to make your trip unforgettable. From the mountains to the sea, our vans are your home on wheels.
+At VanVentures, we believe in the power of travel to inspire and rejuvenate. Our mission is to provide you with the perfect vehicle for your journey, combining comfort, reliability, and adventure. Each of our vans is designed with you in mind, featuring all the amenities you need to make your trip unforgettable. From the mountains to the sea, our vans are your home on wheels.
 
 #### How It Works Section
 ---
@@ -38,17 +38,17 @@ Explore our range of high-quality vans, each designed for a unique adventure. Wh
 ---
 **What Our Customers Say**
 
-*"WanderWheels made our trip unforgettable. The van was perfect, and the service was exceptional!"* - Sarah J.
+*"VanVentures made our trip unforgettable. The van was perfect, and the service was exceptional!"* - Sarah J.
 
-*"Our family had the best vacation ever thanks to WanderWheels. Highly recommend!"* - The Smith Family
+*"Our family had the best vacation ever thanks to VanVentures. Highly recommend!"* - The Smith Family
 
-*"Exploring the mountains in the Mountain Climber was an experience we'll never forget. Thanks, WanderWheels!"* - Mark T.
+*"Exploring the mountains in the Mountain Climber was an experience we'll never forget. Thanks, VanVentures!"* - Mark T.
 
 #### Call to Action Section
 ---
 **Ready to Hit the Road?**
 
-Start your adventure today with WanderWheels. Book your van now and get ready to explore the world like never before. Your journey begins here.
+Start your adventure today with VanVentures. Book your van now and get ready to explore the world like never before. Your journey begins here.
 
 #### Contact Us Section
 ---
@@ -56,16 +56,16 @@ Start your adventure today with WanderWheels. Book your van now and get ready to
 
 Have questions or need assistance? Our friendly team is here to help.
 
-- **Email**: support@wanderwheels.com
-- **Phone**: 1-800-WANDER
+- **Email**: support@vanventures.com
+- **Phone**: 1-800-VANVENTURE
 - **Address**: 123 Adventure Road, Sunnyvale, CA
 
 Follow us on social media for travel inspiration and updates.
 
-- **Instagram**: @WanderWheels
-- **Facebook**: /WanderWheels
-- **Twitter**: @WanderWheels
+- **Instagram**: @VanVentures
+- **Facebook**: /VanVentures
+- **Twitter**: @VanVentures
 
 ---
 
-Feel free to adjust any of this content to better suit your brand and vision for WanderWheels!
+Feel free to adjust any of this content to better suit your brand and vision for VanVentures!
