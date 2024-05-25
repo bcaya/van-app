@@ -129,6 +129,11 @@ color: white;
 
 }
 
+.van-card {
+  background-color:#FAEDCD;
+  padding: .8 1.6rem;
+}
+
 .van-card img {
   border-radius: 5px;
   object-fit:contain;
@@ -146,9 +151,9 @@ color: white;
   transition: 200ms all cubic-bezier(0.8, 0, 0.2, 1);
 }
 
-@supports (width: min(250px, 100%)) {
+@supports (width: min(200px, 100%)) {
   .van-list {
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   }
 }
   
