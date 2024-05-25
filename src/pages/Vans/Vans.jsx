@@ -22,6 +22,8 @@ export default function Vans(){
 
   return(
     <div className="van-list-container">
+      <p>
+        Explore our range of high-quality vans, each designed for a unique adventure. Whether you’re a solo traveler, a couple, or a family, we have the perfect van for you.</p>
       <div className="van-list">
         {vanCards}
       </div>

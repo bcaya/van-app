@@ -6,6 +6,7 @@ import About from './pages/About.jsx';
 import Home from './pages/Home.jsx';
 import Vans from './pages/Vans/Vans.jsx'
 import Host from './pages/Host.jsx';
+import ContactUs from './pages/ContactUs.jsx';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './index.css'
 import "../server.js"
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />}/>
           <Route path="vans" element={<Vans/>}/>
+          <Route path="contact-us" element={<ContactUs />}/>
           <Route path="host" element={<Host/>}/>
         </Route>
       </Routes>

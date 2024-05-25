@@ -19,6 +19,11 @@ export default function Header(){
           to="/vans">
           Vans
         </NavLink>
+        <NavLink
+          to="/contact-us"
+          >
+            Contact Us
+          </NavLink>
       </nav>
     </header>
   )
