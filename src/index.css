@@ -16,7 +16,36 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
+.stack > * {
+  margin-block: 0;
+} 
+
+.stack > * + * {
+  margin-block-start: var(--space, 1.5rem);
+}
+.box {
+  padding: var(--s1);
+  border: var(--border-thin) solid;
+  --color-light: #fff;
+  --color-dark: #000;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box.invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
 .site-wrapper{
   min-height: 100vh;
   display: flex;
@@ -131,13 +160,31 @@ color: white;
 
 .van-card {
   background-color:#FAEDCD;
-  padding: .8 1.6rem;
+  padding: .5rem 1rem;
+}
+.frame {
+  --n: 16;
+  --d: 9;
+  aspect-ratio: var(--n) / var(--d);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.van-card img {
-  border-radius: 5px;
-  object-fit:contain;
-  height:6.5rem;
+.frame-sq {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame > img,
+.frame > video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
 }
 .van-type {
   height: 34px;
@@ -151,9 +198,9 @@ color: white;
   transition: 200ms all cubic-bezier(0.8, 0, 0.2, 1);
 }
 
-@supports (width: min(200px, 100%)) {
+@supports (width: min(250px, 100%)) {
   .van-list {
-    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   }
 }
   

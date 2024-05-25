@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Vans(){
   const [vans, setVans] = React.useState([])
@@ -10,13 +11,18 @@ export default function Vans(){
   },[])
 
   const vanCards = vans.map(van => (
-    <div key={van.id} className="van-card">
-      <img src={van.imageUrl} />
-      <div className="van-details">
+    <div key={van.id} className="van-card stack">
+
+      <Link to={`/vans/${van.id}`}>
+        <div className="frame-sq">
+        <img src={van.imageUrl} />
+        </div>
+        <div className="van-details">
         <h3>{van.name}</h3>
         <p>${van.price}</p>
       </div>
       <i className={`van-type ${van.type} selected`}>{van.type}</i>
+      </Link>
     </div>
   ))
 
@@ -24,7 +30,7 @@ export default function Vans(){
     <div className="van-list-container">
       <p>
         Explore our range of high-quality vans, each designed for a unique adventure. Whether you’re a solo traveler, a couple, or a family, we have the perfect van for you.</p>
-      <div className="van-list">
+      <div className="van-list box">
         {vanCards}
       </div>
     </div>
