@@ -28,7 +28,7 @@ return(
       to=".." //this is a link back to the relative path aka so you can go back to what you weere prev looking at. 
       relative="path"
       className="back-button"
-      >&larr; <Span>Back to all the vans</Span></Link>
+      >&larr; <span>Back to all the vans</span></Link>
 
       <div className="host-van-detail-layout-container">
         <div className="host-van-details">

@@ -56,7 +56,7 @@ server.create("user", { id: "123", email: "b@b.com", password: "p123", name: "Bo
 
     routes() {
         this.namespace = "api"
-        this.logging = false
+        this.logging = true
         // this.timing = 2000  // => mock a 2 second delay in server response
 
         this.get("/vans", (schema, request) => {
