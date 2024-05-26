@@ -31,7 +31,7 @@ server.create("van",   {
   description: "The Mountain Climber is equipped with everything you need for high-altitude adventures. Featuring a reinforced chassis, climbing gear storage, and a powerful engine.",
   imageUrl: "https://silver-bird.static.domains/vans/van-4.jpg",
   type: "adventure",
-  hostId: "126"
+  hostId: "123"
 })
 server.create("van",   {
   id: "5",
@@ -40,7 +40,7 @@ server.create("van",   {
   description: "The Beach Bum is designed for those who love the sea. With a surfboard rack, outdoor shower, and cozy sleeping quarters, it’s the perfect beach getaway vehicle.",
   imageUrl: "https://silver-bird.static.domains/vans/van-1.jpg",
   type: "leisure",
-  hostId: "127"
+  hostId: "123"
 })
 server.create("van",   {
   id: "6",
@@ -49,7 +49,7 @@ server.create("van",   {
   description: "The Family Traveler is spacious and comfortable, ideal for family trips. It includes bunk beds, a full kitchenette, and plenty of room for the kids.",
   imageUrl: "https://silver-bird.static.domains/vans/van-3.jpg",
   type: "family",
-  hostId: "128"
+  hostId: "123"
 })
 server.create("user", { id: "123", email: "b@b.com", password: "p123", name: "Bob" })
     },

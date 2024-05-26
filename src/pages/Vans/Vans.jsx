@@ -20,7 +20,12 @@ export default function Vans(){
   const vanCards = displayedVans.map(van => (
     <div key={van.id} className="van-card stack">
 
-      <Link to={`/vans/${van.id}`}>
+      <Link 
+        to={van.id}
+        state={{
+          search: `?${searchParams.toString()}`,
+          type: typeFilter
+        }}>
         <div className="frame-sq">
         <img src={van.imageUrl} />
         </div>
@@ -33,32 +38,56 @@ export default function Vans(){
     </div>
   ))
 
+  function handleFilterChange(key, value){
+    setSearchParams(prevParams => {
+      if(value === null){
+        prevParams.delete(key)
+      }else {
+        prevParams.set(key,value)
+      }
+      return prevParams
+    })
+  }
+
   return(
     <div className="van-list-container">
       <p>
         Explore our range of high-quality vans, each designed for a unique adventure. Whether you’re a solo traveler, a couple, or a family, we have the perfect van for you.</p>
         <div className="van-list-filter-buttons">
-                <Link 
-                    to="?type=family"
-                    className="van-type family"
-                >Family</Link>
-                <Link 
-                    to="?type=leisure"
-                    className="van-type leisure"
-                >leisure</Link>
-                <Link 
-                    to="?type=adventure"
-                    className="van-type adventure"
-                >Adventure</Link>
-                <Link 
-                    to="?type=city"
-                    className="van-type city"
-                >City</Link>
-                <Link 
-                    to="."
+                <button 
+                    onClick={() => handleFilterChange("type", "family")}
+                    className={
+                      `van-type family
+                      ${typeFilter === "family" ? "selected" : "" }`
+                    }
+                >Family</button>
+                <button 
+                  onClick={() => handleFilterChange("type", "leisure")}
+                  className={
+                    `van-type leisure
+                    ${typeFilter === "leisure" ? "selected" : "" }`
+                  }
+                >Leisure</button>
+                <button 
+                   onClick={() => handleFilterChange("type", "adventure")}
+                   className={
+                     `van-type adventure
+                     ${typeFilter === "adventure" ? "selected" : "" }`
+                   }
+                >Adventure</button>
+                <button 
+                  onClick={() => handleFilterChange("type", "city")}
+                  className={
+                    `van-type city
+                    ${typeFilter === "city" ? "selected" : "" }`
+                  }
+                >City</button>
+                { typeFilter ? (
+                  <button 
+                    onClick={() => handleFilterChange("type", null)}
                     className="van-type clear-filters"
-                >Clear filter</Link>
-            
+                    >Clear Filters</button>
+                ) : null }
             </div>
       <div className="van-list box">
         {vanCards}
