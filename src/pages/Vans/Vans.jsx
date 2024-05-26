@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useSearchParams} from 'react-router-dom'
 
 export default function Vans(){
   const [searchParams, setSearchParams] = useSearchParams()
@@ -37,6 +37,29 @@ export default function Vans(){
     <div className="van-list-container">
       <p>
         Explore our range of high-quality vans, each designed for a unique adventure. Whether you’re a solo traveler, a couple, or a family, we have the perfect van for you.</p>
+        <div className="van-list-filter-buttons">
+                <Link 
+                    to="?type=family"
+                    className="van-type family"
+                >Family</Link>
+                <Link 
+                    to="?type=leisure"
+                    className="van-type leisure"
+                >leisure</Link>
+                <Link 
+                    to="?type=adventure"
+                    className="van-type adventure"
+                >Adventure</Link>
+                <Link 
+                    to="?type=city"
+                    className="van-type city"
+                >City</Link>
+                <Link 
+                    to="."
+                    className="van-type clear-filters"
+                >Clear filter</Link>
+            
+            </div>
       <div className="van-list box">
         {vanCards}
       </div>
