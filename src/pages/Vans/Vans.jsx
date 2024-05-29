@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, useSearchParams} from 'react-router-dom'
+import { Cluster, Box, Stack, Grid, Center } from '../../assets/CSS/StylesMain'
 
 export default function Vans(){
   const [searchParams, setSearchParams] = useSearchParams()
@@ -18,7 +19,7 @@ export default function Vans(){
     : vans 
 
   const vanCards = displayedVans.map(van => (
-    <div key={van.id} className="van-card stack">
+    <box-l key={van.id} className="van-card box">
 
       <Link 
         to={van.id}
@@ -26,16 +27,17 @@ export default function Vans(){
           search: `?${searchParams.toString()}`,
           type: typeFilter
         }}>
-        <div className="frame-sq">
+        <stack-l >
         <img src={van.imageUrl} />
-        </div>
-        <div className="van-details">
+
+        <cluster-l className="van-details">
         <h3>{van.name}</h3>
         <p>${van.price}</p>
-      </div>
       <i className={`van-type ${van.type} selected`}>{van.type}</i>
+      </cluster-l>
+      </stack-l>
       </Link>
-    </div>
+    </box-l>
   ))
 
   function handleFilterChange(key, value){
@@ -50,10 +52,9 @@ export default function Vans(){
   }
 
   return(
-    <div className="van-list-container">
-      <p>
-        Explore our range of high-quality vans, each designed for a unique adventure. Whether you’re a solo traveler, a couple, or a family, we have the perfect van for you.</p>
-        <div className="van-list-filter-buttons">
+    <box-l className="van-list-container">
+        <box-l>
+        <cluster-l align="center" className="van-list-filter-buttons">
                 <button 
                     onClick={() => handleFilterChange("type", "family")}
                     className={
@@ -88,11 +89,12 @@ export default function Vans(){
                     className="van-type clear-filters"
                     >Clear Filters</button>
                 ) : null }
-            </div>
-      <div className="van-list box">
+            </cluster-l>
+          </box-l>
+      <grid-l min="calc(var(--measure) / 3)">
         {vanCards}
-      </div>
-    </div>
+      </grid-l>
+    </box-l>
   )
 }
 

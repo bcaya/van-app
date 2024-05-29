@@ -3,7 +3,9 @@ import React from 'react'
 export default function ContactUs(){
   return(
     <div className="contact-container">
-      <h2>Contact Us</h2>
+      <div className="contact-header">
+        <h2 className="contact-h2">Contact Us</h2>
+      </div>
       <p>Have questions or need assistance? Our friendly team is here to help.
       <ul>
       <li>**Email**: support@vanventures.com</li> 

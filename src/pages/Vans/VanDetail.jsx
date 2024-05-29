@@ -12,9 +12,10 @@ export default function VanDetail(){
   },[params.id])
 console.log(van)
   return (
-    <div className="van-detail-container">
+    <div className="van-detail-container ">
         {van ? (
-                <div className="van-detail">
+                <div className="van-detail box">
+                  
                     <img src={van.imageUrl} />
                     <i className={`van-type ${van.type} selected`}>
                         {van.type}
