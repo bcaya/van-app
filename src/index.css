@@ -1,7 +1,19 @@
 *{
   box-sizing: border-box;
-
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-special);
+}
+body{
+  font-family:var(--font-plain);
+  margin:0;
+}
+
 :root {
   --measure: 60ch;
   --ratio: 1.5;
@@ -16,6 +28,10 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+  --font-plain: "Inter", sans-serif;
+  --font-serif: "Inter", sans-serif;
+  --font-special:"Barlow Condensed", sans-serif;
+  --font-mono:  "IBM Plex Mono", monospace;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -23,6 +39,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* CSS HEX */
+--tea-green: #ccd5aeff;
+--beige: #e9edc9ff;
+--cornsilk: #fefae0ff;
+--papaya-whip: #faedcdff;
+--buff: #d4a373ff;
+--burnt-sienna: #f26d40ff;
+--feldgrau: #455e5dff;
+--cornsilk: #fefae0ff;
+--hunter-green: #335f30ff;
+--dark-purple: #350824ff;
 }
 html,
 body,
@@ -194,11 +221,12 @@ header a{
   padding: .4rem 1.3rem;
 }
 header .site-logo{
-  color: #1F140A;
+  color: var(--dark-purple);
   margin-right: auto;
   font-weight: 900;
-  font-size: 2rem;
-  text-decoration: underline overline;
+  font-size: 2.5rem;
+  font-family: var(--font-special);
+  text-decoration: underline;
 }
 
 
@@ -373,4 +401,10 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer{
+  height: 3rem;
+  background-color: var(--dark-purple);
+  color: var(--cornsilk);
 }

@@ -6,8 +6,8 @@ import { Box } from '../assets/CSS/StylesMain.jsx'
 
 export default function Layout(){
   return(
-    <div className="site-wrapper">
-      <box-l>
+
+      <box-l padding="0">
       <Header />
       <main>
         <Outlet/>
@@ -15,6 +15,6 @@ export default function Layout(){
       </main>
       </box-l>
 
-    </div>
+
   )
 }

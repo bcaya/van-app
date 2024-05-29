@@ -1,24 +1,29 @@
 import React from 'react'
+import {Box, Stack, Center} from '../assets/CSS/StylesMain'
 
 export default function ContactUs(){
   return(
-    <div className="contact-container">
-      <div className="contact-header">
+    <box-l className="contact-container">
+      <center-l className="contact-header">
+        <stack-l>
         <h2 className="contact-h2">Contact Us</h2>
-      </div>
-      <p>Have questions or need assistance? Our friendly team is here to help.
+      
+      <p>Have questions or need assistance? Our friendly team is here to help.</p>
       <ul>
       <li>**Email**: support@vanventures.com</li> 
       <li>**Phone**: 1-800-VANVENTURE</li> 
       <li>**Address**: 123 Adventure Road, Sunnyvale, CA</li>  
       </ul>
-        Follow us on social media for travel inspiration and updates.
+        <p>Follow us on social media for travel inspiration and updates.</p>
         <ul>
       <li>**Instagram**: @VanVentures</li> 
       <li>**Facebook**: /VanVentures</li> 
       <li>**Twitter**: @VanVentures</li>  
       </ul>
-      </p>
-    </div>
+      
+        </stack-l>
+       
+      </center-l>
+    </box-l>
   )
 }
