@@ -1,5 +1,6 @@
 import React from "react"
 import { useParams } from "react-router-dom"
+import { Box, Cluster} from "../../assets/CSS/StylesMain"
 
 export default function VanDetail(){
   const params = useParams()
@@ -13,18 +14,34 @@ export default function VanDetail(){
 console.log(van)
   return (
     <div className="van-detail-container ">
-        {van ? (
-                <div className="van-detail box">
-                  
-                    <img src={van.imageUrl} />
-                    <i className={`van-type ${van.type} selected`}>
-                        {van.type}
-                    </i>
-                    <h2>{van.name}</h2>
-                    <p className="van-price"><span>${van.price}</span>/day</p>
-                    <p>{van.description}</p>
-                    <button className="link-button">Rent this van</button>
+        {van ? (<box-l padding="var(--s2)">
+          <div className="van-detail box">
+                  <cluster-l>
+                  <img src={van.imageUrl} />
+                  <div>
+                  <h2>{van.name}</h2>
+                  </div>
+                
+                  <div>
+                  <p className="van-price"><span>${van.price}</span>/day</p>
+                  </div>
+                  <div>
+                 <i className={`van-type ${van.type} selected`}>
+                      {van.type}
+                  </i>
+                  </div> 
+                <div>
+                <p>{van.description}</p>
                 </div>
+                 <div>
+                 <button className="link-button">Rent this van</button>
+                 </div>
+                
+                  </cluster-l>
+                
+              </div>
+        </box-l>
+                
             ) : <h2>Loading...</h2>}
     </div>
   )

@@ -20,7 +20,7 @@ export default function Vans(){
 
   const vanCards = displayedVans.map(van => (
     <box-l key={van.id} className="van-card box">
-
+      <div>
       <Link 
         to={van.id}
         state={{
@@ -31,12 +31,16 @@ export default function Vans(){
         <img src={van.imageUrl} />
 
         <cluster-l className="van-details">
-        <h3>{van.name}</h3>
+       <div>
+       <h3>{van.name}</h3>
         <p>${van.price}</p>
+        </div> 
       <i className={`van-type ${van.type} selected`}>{van.type}</i>
       </cluster-l>
       </stack-l>
       </Link>
+      </div>
+    
     </box-l>
   ))
 
