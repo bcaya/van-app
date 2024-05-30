@@ -51,6 +51,19 @@ body{
 --hunter-green: #335f30ff;
 --dark-purple: #350824ff;
 }
+.family{
+  background-color:var(--burnt-sienna)
+}
+.city{
+  background-color: var(--feldgrau);
+}
+.adventure{
+  background-color: var(--hunter-green);
+}
+.leisure{
+  background-color: var(--dark-purple);
+}
+
 html,
 body,
 div,
@@ -60,6 +73,9 @@ main,
 footer,
 a {
   max-inline-size: none;
+}
+img {
+  max-inline-size: 100%;
 }
 /* Primitive Fallbacks */
 box-l {
@@ -245,17 +261,14 @@ a:hover {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.8em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -264,7 +277,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #1F140A;
-    background-color: #FEFAE0;
+    background-color: var(--cornsilk);
   }
   a:hover {
     color: #83944C;
@@ -317,26 +330,25 @@ color: white;
   width:100vw;
 }
 
-.van-list{
+/* .van-list{
   display: grid;
   grid-gap: 1rem;
 
-}
+} */
 
 .van-card {
-  background-color:#FAEDCD;
+  background-color:var(--cornsilk);
   padding: .5rem 1rem;
 }
 
 .van-type {
-  height: 2rem;
-  padding: 6px 26px;
+  padding: 1rem 2rem;
   font-style: normal;
   font-weight: 500;
   border: none;
   border-radius: 5px;
-  background-color: #FFEAD0;
-  color: #1F140A;
+  background-color: var(--buff);
+  color: var(--papaya-whip);
   transition: 200ms all cubic-bezier(0.8, 0, 0.2, 1);
 }
 
@@ -372,9 +384,7 @@ cursor: pointer;
   font-size: 2rem;
   margin-bottom: 10px;
 }
-.van-type{
-  width: 6.5rem;
-}
+
 
 .van-detail > i {
   align-self: flex-start;
@@ -396,12 +406,6 @@ cursor: pointer;
   font-size: 1.125rem;
 }
 
-/* Contact Page */
-.contact-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 footer{
   height: 3rem;
