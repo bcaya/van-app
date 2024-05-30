@@ -1,4 +1,5 @@
 import React from 'react'
+import {Box, Cover} from '../assets/CSS/StylesMain'
 
 export default function ContactUs(){
   return(

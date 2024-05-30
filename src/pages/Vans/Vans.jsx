@@ -91,7 +91,7 @@ export default function Vans(){
                 ) : null }
             </cluster-l>
           </box-l>
-      <grid-l min="calc(var(--measure) / 3)">
+      <grid-l min="calc(var(--measure) / 2)">
         {vanCards}
       </grid-l>
     </box-l>

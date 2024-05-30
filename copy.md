@@ -40,4 +40,9 @@ Start your adventure today with VanVentures. Book your van now and get ready to 
 
 ---
 
+    --font-plain: Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-serif: Georgia, serif;
+    --font-special: Barlow Condensed, Helvetica, sans-serif;
+    --font-mono: Menlo, Courier, Courier New, Andale Mono, monospace;
+
 Feel free to adjust any of this content to better suit your brand and vision for VanVentures!
