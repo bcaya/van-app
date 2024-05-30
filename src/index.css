@@ -51,18 +51,7 @@ body{
 --hunter-green: #335f30ff;
 --dark-purple: #350824ff;
 }
-.family{
-  background-color:var(--burnt-sienna)
-}
-.city{
-  background-color: var(--feldgrau);
-}
-.adventure{
-  background-color: var(--hunter-green);
-}
-.leisure{
-  background-color: var(--dark-purple);
-}
+
 
 html,
 body,
@@ -352,6 +341,23 @@ color: white;
   transition: 200ms all cubic-bezier(0.8, 0, 0.2, 1);
 }
 
+.van-type.adventure:hover, 
+.van-type.adventure.selected{
+   background-color: var(--hunter-green);;
+}
+.van-type.family:hover,
+.van-type.family.selected{
+  background-color:var(--burnt-sienna)
+}
+.van-type.city:hover,
+.van-type.city.selected {
+  background-color: var(--feldgrau);
+}
+
+.van-type.leisure:hover,
+.van-type.leisure.selected {
+  background-color: var(--dark-purple);
+}
 @supports (width: min(250px, 100%)) {
   .van-list {
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
@@ -405,7 +411,9 @@ cursor: pointer;
   color: white;
   font-size: 1.125rem;
 }
-
+.about-page-container{
+  max-height:20px;
+}
 
 footer{
   height: 3rem;
