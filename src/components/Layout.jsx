@@ -6,13 +6,15 @@ import { Box, Cover } from '../assets/CSS/StylesMain.jsx'
 
 export default function Layout(){
   return(
-    <cover-l >
-      
+
+      <box-l padding="0">
       <Header />
       <main>
         <Outlet/>
       <Footer/>
       </main>
-    </cover-l>
+      </box-l>
+
+
   )
 }

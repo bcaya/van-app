@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box } from '../assets/CSS/StylesMain'
 
 export default function Footer(){
   return(
