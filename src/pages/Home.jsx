@@ -17,7 +17,7 @@ export default function Home(){
   <stack-l>
     <box-l>
       <div className="about-page-container papaya-whip">
-       <h3>What is VanVentures?</h3>
+       <h3>Tell me more!</h3>
             <p>At VanVentures, we believe in the power of travel to inspire and rejuvenate. Our mission is to provide you with the perfect vehicle for your journey, combining comfort, reliability, and adventure. Each of our vans is designed with you in mind, featuring all the amenities you need to make your trip unforgettable. From the mountains to the sea, our vans are your home on wheels.</p>
     </div>
             

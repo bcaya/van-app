@@ -28,7 +28,10 @@ export default function Vans(){
           type: typeFilter
         }}>
         <stack-l >
-        <img src={van.imageUrl} />
+          <box-l>
+            <img src={van.imageUrl} />
+
+          </box-l>
 
         <cluster-l className="van-details">
        <div>

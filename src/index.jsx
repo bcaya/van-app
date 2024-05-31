@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './App.css'
 import Layout from './components/Layout.jsx';
 import Home from './pages/Home.jsx';
 import Vans from './pages/Vans/Vans.jsx'
