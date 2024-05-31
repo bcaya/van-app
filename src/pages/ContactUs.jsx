@@ -4,7 +4,6 @@ import {Box, Stack, Center, Cluster, Sidebar, Frame} from '../assets/CSS/StylesM
 export default function ContactUs(){
   return(
     <box-l className="contact-container">
-      <box-l className="contact-header">
         <stack-l>
           <box-l>
           <h1 className="contact-h2">Contact Us</h1>
@@ -24,7 +23,6 @@ export default function ContactUs(){
             </stack-l>
         </box-l>
         </stack-l>
-      </box-l>
     </box-l>
   )
 }
