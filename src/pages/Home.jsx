@@ -3,7 +3,7 @@ import { Box, Stack, Cluster, Frame } from "../assets/CSS/StylesMain"
 const imgUrl = "https://silver-bird.static.domains/about-image.jpg"
 export default function Home(){
   return(
-    <box-l>
+    <box-l padding="var(--s0)">
       <div className="home-container">
       <stack-l>
       <h1>Welcome to VanVentures!</h1>
@@ -15,32 +15,31 @@ export default function Home(){
       </div>
       <box-l >
   <stack-l>
-    <box-l>
-      <div className="about-page-container papaya-whip">
+    <box-l padding="var(--s0)">
+      <box-l className="about-page-container" padding="var(--s0)">
        <h3>Tell me more!</h3>
             <p>At VanVentures, we believe in the power of travel to inspire and rejuvenate. Our mission is to provide you with the perfect vehicle for your journey, combining comfort, reliability, and adventure. Each of our vans is designed with you in mind, featuring all the amenities you need to make your trip unforgettable. From the mountains to the sea, our vans are your home on wheels.</p>
-    </div>
+    </box-l>
             
-    <box-l>
-    <frame-l ratio="16:9" className="frame">
+    <box-l padding="var(--s0)">
+    <frame-l ratio="7:5" className="frame">
         <img src={imgUrl} />
         </frame-l>
     </box-l>
     </box-l> 
-          <box-l>
-         <div className="papaya-whip about-page-content">
+          <box-l padding="var(--s0)">
+     
          <stack-l >
-           <div>
+           <box-l padding="var(--s0)">
            <h2>How It Works</h2>
-            </div> 
-          <cluster-l role="list" >
-              <div role="listitem">Choose Your Van: Browse our diverse fleet of vans, each tailored for different types of adventures. Select the one that suits your needs and budget.</div>
-              <div role="listitem">Book Online: Easily book your chosen van through our user-friendly website. Just pick your dates and complete the reservation process in a few simple steps.</div>
-              <div role="listitem">Pick Up & Go: Pick up your van from our convenient location and hit the road. We’ll provide you with a thorough orientation to ensure you’re comfortable with all the features.</div>
-              <div role="listitem">Explore: Enjoy your adventure with the peace of mind that our vans are well-maintained and fully equipped. Create memories that will last a lifetime.</div>
-            </cluster-l>
+            </box-l> 
+          <stack-l role="list" >
+              <div role="listitem"><p><span className="strong">1. Choose Your Van:</span> Browse our diverse fleet of vans, each tailored for different types of adventures. Select the one that suits your needs and budget.</p></div>
+              <div role="listitem"><p><span className="strong">2. Book Online:</span> Easily book your chosen van through our user-friendly website. Just pick your dates and complete the reservation process in a few simple steps.</p></div>
+              <div role="listitem"><p><span className="strong">3. Pick Up & Go:</span> Pick up your van from our convenient location and hit the road. We’ll provide you with a thorough orientation to ensure you’re comfortable with all the features.</p></div>
+              <div role="listitem"><p><span className="strong">4. Explore:</span> Enjoy your adventure with the peace of mind that our vans are well-maintained and fully equipped. Create memories that will last a lifetime.</p></div>
+            </stack-l>
             </stack-l> 
-          </div> 
           </box-l>
             </stack-l>
     </box-l>

@@ -50,9 +50,16 @@ body{
 --cornsilk: #fefae0ff;
 --hunter-green: #335f30ff;
 --dark-purple: #350824ff;
+--color-dark: #00140F;
+--color-darkish: #4A4545;
+--color-lightish: #FDEED8;
+--color-light: #FEFFEA;
+--color-mid: #72696A;
 }
 
-
+.strong{
+  font-weight:900;
+}
 html,
 body,
 div,
@@ -212,18 +219,16 @@ header a{
   padding: .4rem 1.3rem;
 }
 header .site-logo{
-  color: var(--dark-purple);
+ 
   margin-right: auto;
   font-weight: 900;
   font-size: 2.5rem;
   font-family: var(--font-special);
   text-decoration: underline;
 }
-a {
-  color: var(--dark-purple);
-}
+
 a:hover {
-  color: var(--feldgrau);
+  
   text-decoration: underline;
 }
 button {
@@ -244,8 +249,27 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #1F140A;
-    background-color: var(--cornsilk);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+  a{
+    color:var(--color-dark)
+  }
+  a:hover {
+    color: #83944C;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--color-light);
+    background-color: var(--color-darkish);
+  }
+  a{
+    color:var(--color-light);
   }
   a:hover {
     color: #83944C;
@@ -391,7 +415,7 @@ cursor: pointer;
 }
 .transaction,
 .reviews{
-  background-color:#fff;
+  background-color:var(--color-lightish);
 }
 .papaya-whip{
   background-color:var(--papaya-whip);
