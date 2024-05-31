@@ -293,6 +293,10 @@ color: white;
 .van-list-container{
   padding-inline: 2rem;
   width:100vw;
+  
+}
+main{
+  background-color:#FFF5EB;
 }
 
 /* .van-list{
