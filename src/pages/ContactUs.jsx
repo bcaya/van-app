@@ -10,6 +10,7 @@ export default function ContactUs(){
           <h1 className="contact-h2">Contact Us</h1>
         <p>Have questions or need assistance? Our friendly team is here to help.</p>     
             <stack-l role="list">
+            <stack-l role="list">
             <div role="listitem">Email: support@vanventures.com</div> 
             <div role="listitem">Phone: 1-800-VANVENTURE</div> 
             <div role="listitem">Address: 123 Adventure Road, Sunnyvale, CA</div>  

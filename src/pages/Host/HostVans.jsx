@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { Box } from '../../assets/CSS/StylesMain'
+import { Box, Stack} from '../../assets/CSS/StylesMain'
 
 export default function HostVans(){
   const [vans, setVans] = React.useState([])
@@ -18,31 +18,33 @@ export default function HostVans(){
       key={van.id}
       className="host-van-link-wrapper"
     >
-      <box-l className="host-van-single" key={van.id}>
+      <stack-l className="host-van-single" key={van.id}>
         <img src={van.imageUrl} alt={`Photo of ${van.name}`} />
         <div className="host-van-info">
           <h3>{van.name}</h3>
           <p>${van.price}</p>
         </div>
-      </box-l>
+      </stack-l>
     </Link>
   ))
   return(
-    <section>
+    <box-l>
       <box-l>
       <h1 className="host-vans-title">Your current vans</h1>
       </box-l>
-      <div className="host-vans-list">
+      <box-l className="host-vans-list">
+      <grid-l min="240px">
         {
           vans.length > 0 ? (
-            <grid-l>
-              {hostVanCards}
-            </grid-l>
+            
+             <box-l>{hostVanCards}</box-l> 
+           
           ) : (
             <h2>Loading...</h2>
           )
         }
-      </div>
-    </section>
+         </grid-l>
+      </box-l>
+    </box-l>
   )
 }
