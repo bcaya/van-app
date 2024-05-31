@@ -376,8 +376,8 @@ cursor: pointer;
   font-size: 1.5rem;
 }
 .van-detail .link-button {
-  background-color: #FF8C38;
-  color: white;
+  background-color: var(--burnt-sienna);
+  color: var(--color-light);
   font-size: 1.125rem;
 }
 
@@ -387,10 +387,12 @@ cursor: pointer;
   padding: 2rem;
 }
 
+.transaction{
+  background-color:#fff;
+}
 .papaya-whip{
   background-color:var(--papaya-whip);
 }
-
 
 footer{
   height: 3rem;
@@ -398,3 +400,4 @@ footer{
   color: var(--cornsilk);
   text-align:end;
 }
+

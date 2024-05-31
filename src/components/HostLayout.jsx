@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import {Cluster} from '../assets/CSS/StylesMain'
 
 export default function HostLayout(){
   const activeStyles = {
@@ -10,6 +11,7 @@ export default function HostLayout(){
   return(
     <>
       <nav className="host-nav">
+        <cluster-l justify="space-evenly">
         <NavLink
           to="."
           end
@@ -35,7 +37,9 @@ export default function HostLayout(){
           >
             Reviews
           </NavLink>
+        </cluster-l>
       </nav>
+       
       <Outlet/>
     </>
   )
