@@ -386,8 +386,11 @@ cursor: pointer;
 .about-page-content{
   padding: 2rem;
 }
-
-.transaction{
+.reviews svg{
+  color:#FF8C38;
+}
+.transaction,
+.reviews{
   background-color:#fff;
 }
 .papaya-whip{
