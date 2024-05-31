@@ -6,6 +6,7 @@ import Vans from './pages/Vans/Vans.jsx'
 import VanDetail from './pages/Vans/VanDetail.jsx';
 import HostLayout from './components/HostLayout.jsx'
 import Dashboard from './pages/Host/Dashboard.jsx';
+import Login from './pages/Login.jsx';
 import HostVanDetail from './pages/Host/HostVanDetail.jsx';
 import HostVanInfo from './pages/Host/HostVanInfo.jsx';
 import HostVanPhoto from './pages/Host/HostVanPhotos.jsx';
@@ -29,6 +30,10 @@ function App() {
           <Route path="vans" element={<Vans/>}/>
           <Route path="vans/:id" element={<VanDetail/>}/>
           <Route path="contact-us" element={<ContactUs />}/>
+          <Route
+            path="login"
+            element={<Login />}
+          />
           <Route path="host" element={<HostLayout/>}>
             <Route index element={<Dashboard/>}/>
             <Route path="income" element={<Income />}/>
