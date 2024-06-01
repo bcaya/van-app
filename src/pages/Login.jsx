@@ -19,8 +19,9 @@ export default function Login(){
     loginUser(loginFormData)
       .then(data => {
         setError(null)
+        
         localStorage.setItem("loggedin", true)
-        navigate(from, {replace: true})
+        navigate("/host", { replace: true })
       })
       .catch(err=> {
         setError(err)
@@ -55,20 +56,30 @@ export default function Login(){
          
             <form onSubmit={handleSubmit} className="login-form">
             <stack-l>
-              <input 
+              <box-l>
+                <stack-l>
+                  <h3>Email</h3>
+                <input 
                 name="email"
                 onChange={handleChange}
                 type="email"
-                placeholder="Email Address"
                 value={loginFormData.email}
               />
-                            <input 
-                name="password"
-                onChange={handleChange}
-                type="password"
-                placeholder="password"
-                value={loginFormData.email}
-              />
+                </stack-l>
+              </box-l>
+                       <box-l>
+                        <stack-l>
+                            <h3>Password</h3>
+                          <input 
+                    name="password"
+                    onChange={handleChange}
+                    type="password"
+                    
+                    value={loginFormData.password}
+                  />
+                        </stack-l>
+                        
+                        </box-l>     
               <button 
                 disabled={status === "submitting"}
                 >{status === "submitting"

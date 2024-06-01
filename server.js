@@ -16,7 +16,7 @@ createServer({
   })
 server.create("van",   {
   id: "3",
-  "name": "Urban Escape",
+  name: "Urban Escape",
   price: 55,
   description: "The Urban Escape is a compact and efficient van ideal for city trips. It includes a comfortable sleeping area, kitchenette, and plenty of space for your gear.",
   imageUrl: "https://silver-bird.static.domains/vans/van-7.jpg",
@@ -57,6 +57,7 @@ server.create("user", { id: "123", email: "b@b.com", password: "p123", name: "Bo
     routes() {
         this.namespace = "api"
         this.logging = true
+        this.passthrough("https://firestore.googleapis.com/**")
         // this.timing = 2000  // => mock a 2 second delay in server response
 
         this.get("/vans", (schema, request) => {

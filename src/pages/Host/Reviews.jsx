@@ -33,7 +33,7 @@ export default function Reviews(){
             <stack-l>
               {reviewsData.map((review) => (
                 <box-l>
-                  <div className="reviews">
+                  <div key={review.id} className="reviews">
                   <box-l>
                     {[...Array(review.rating)].map((_, i) => (
                       <BsStarFill className="review-star" key={i} />
@@ -42,9 +42,9 @@ export default function Reviews(){
                       <p>{review.name}</p>
                       <p>{review.date}</p>
                     </box-l>
-                    <box>
+                    <box-l>
                       {review.text}
-                    </box>
+                    </box-l>
                   </box-l>
                   </div>
                  

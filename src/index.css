@@ -210,8 +210,6 @@ switcher-l > * {
 }
 header {
   height: 5rem;
-  display:flex;
-  align-items: center;
   padding-bottom: 1rem;
 }
 header a{
