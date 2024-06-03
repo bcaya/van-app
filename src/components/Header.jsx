@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom"
 import { Cluster } from '../assets/CSS/StylesMain'
-import { BiSolidLogOutCircle } from 'react-icons/bi'
+import { CiLogout } from "react-icons/ci";
 
 export default function Header(){
   const activeStyles = {
@@ -18,7 +18,7 @@ function fakeLogOut(){
     
       <box-l>
 
-      <cluster-l justify="space-between" align="flex-end">
+      <cluster-l justify="space-between" >
         <div>
         <Link className="site-logo" to="/">VanVentures</Link>
         </div>
@@ -44,16 +44,15 @@ function fakeLogOut(){
           </NavLink>
           <Link to="login" className="login-link">
            <icon-l>
-           <BiSolidLogOutCircle />
+           <CiLogout />
             </icon-l> 
           </Link>
-          <button onClick={fakeLogOut}>X</button>
+          <button className="logout-button" onClick={fakeLogOut}>X</button>
+         
+          
           </div> 
             </cluster-l>
-
           </box-l>
-    
-
     </header>
   )
 }

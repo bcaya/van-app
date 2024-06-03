@@ -26,14 +26,14 @@ export default function Reviews(){
             <h2>Your Reviews</h2>
             <p>Last <span>30 days</span></p>
             <box-l padding="var(--s3)">
-              <img src="https://silver-bird.static.domains/reviews-graph.png" />
+              <img src="https://i.ibb.co/JFwDTfH/reviews-graph.png" />
         </box-l>
         </box-l>
         <box-l><h3>Reviews ({reviewsData.length})</h3></box-l>
             <stack-l>
               {reviewsData.map((review) => (
-                <box-l>
-                  <div key={review.id} className="reviews">
+                <box-l key={review.id}>
+                  <div  className="reviews">
                   <box-l>
                     {[...Array(review.rating)].map((_, i) => (
                       <BsStarFill className="review-star" key={i} />

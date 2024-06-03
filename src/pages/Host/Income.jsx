@@ -16,7 +16,7 @@ export default function Income(){
         <h2>$1,680</h2>
         </box-l>
         <box-l padding="var(--s3)">
-          <img src="https://silver-bird.static.domains/income-graph.png" />
+          <img src="https://i.ibb.co/K0Ctxf1/income-graph.png" />
         </box-l>
         <box-l>
           <div>

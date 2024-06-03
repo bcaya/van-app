@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 import { Box, Stack, Cluster, Frame } from "../assets/CSS/StylesMain"
-const imgUrl = "https://silver-bird.static.domains/about-image.jpg"
+const imgUrl = "https://i.ibb.co/TP6kSmv/about-van.jpg"
 export default function Home(){
   return(
     <box-l padding="var(--s0)">
